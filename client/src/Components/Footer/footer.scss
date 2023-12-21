@@ -89,8 +89,8 @@
 
 }
 
-
-@media (max-width: 600px) {
+@mixin mobile{
+    @media (max-width:480px) {
 
     .footer{
         height:40%;
@@ -182,4 +182,5 @@
     }
     
     }
+}
 }
