@@ -6,6 +6,16 @@ function App() {
   return (
     <div className="App">
         <Header />
+        <div className="gridcon">
+        <h1>shay</h1>
+        <h1>shay</h1>
+        <h1>shay</h1>
+        <h1 className="last">shay</h1>
+        <h1>shay</h1>
+        <h1>shay</h1>
+        <h1>shay</h1>
+       
+        </div>
         <h1>shay</h1>
         <h1>shay</h1>
         <h1>shay</h1>

@@ -19,7 +19,23 @@ body {
     width: 100%;
     /* Other styles... */
 }
+.gridcon{
+    display: grid;
 
+    grid-template-rows: repeat(2, 1fr); /* 2 rows with equal height */
+    grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+
+  .last{
+    grid-row: span 2;
+  }
+  h1{
+    border: 2px solid red;
+    background-color: aqua;
+    color: red;
+  }
+
+}
 @mixin mobile{
     @media(max-width:480px){
         @content;
