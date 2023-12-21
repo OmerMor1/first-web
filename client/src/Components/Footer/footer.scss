@@ -116,7 +116,7 @@
         .phone {
             background-color: #1E90FF;   
             @include mobile{
-                background-color:  #CC0000;   
+                background-color:  red;   
              }  
         }
         .whatsapp {
