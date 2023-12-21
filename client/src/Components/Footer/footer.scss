@@ -4,7 +4,7 @@
 .footer{
     height:40%;
     width: 100%;
-    background-color: darkblue;
+    background-color: black;
     color: white;
   position: relative;
     bottom: 0;
@@ -115,9 +115,6 @@
         }
         .phone {
             background-color: #1E90FF;   
-            @include mobile{
-                background-color:  red;   
-             }  
         }
         .whatsapp {
             background-color: #228B22;   
