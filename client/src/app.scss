@@ -20,3 +20,26 @@ body {
     /* Other styles... */
 }
 
+
+@media screen and (max-width: 600px) {
+
+    body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.App {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    width: 100%; /* Full width for smaller screens */
+ 
+}
+.footer{
+    width: 50%;
+}
+}
