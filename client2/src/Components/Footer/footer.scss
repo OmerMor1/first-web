@@ -1,0 +1,90 @@
+.footer{
+    height:40%;
+    width: 100%;
+    background-color: black;
+    color: white;
+  position: relative;
+    bottom: 0;
+    display: flex;
+    
+    .right{
+        flex: 1;
+        padding: 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding-right: 40px;
+        h2{
+            margin: 0;
+            font-size: 4rem;
+            color: #87CEEB;
+            font-weight:bold;
+        }
+        h3{
+            margin: 0px;
+            font-size: 2.5rem;
+            color: #87CEEB;
+            font-weight:bold;
+        }
+        p{
+            font-size: 1.5rem;
+            margin: 0;
+            margin-top: 10px;
+        }
+    }
+    .left{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        h4{
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight:bold;
+        }
+        button{
+            width: 80%;
+            height: 60px;
+            display: flex; /* Enable Flexbox */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            position: relative; /* Needed for absolute positioning of the icon */
+            font-size: 2rem;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+           
+            a { /* Updated to target anchor tags */
+                color: white;
+                text-decoration: none; /* Remove underline */
+                display: flex; 
+                justify-content: center; /* Center content horizontally */
+                align-items: center;
+    
+            .icon {
+                position: absolute;
+                right: 10px; /* Adjust as needed */
+                font-size: 2rem;
+
+            }
+        }
+
+        }
+        .phone {
+            background-color: #1E90FF;   
+        }
+        .whatsapp {
+            background-color: #228B22;   
+        }
+        .email {
+            background-color: #CC0000;   
+        }
+        
+        
+        
+            
+}
+
+}

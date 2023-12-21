@@ -1,0 +1,47 @@
+.header{
+    height: 100px;
+    width: 100%;
+
+    .top{
+        background-color:  #87CEEB;
+        height:15%;
+    }
+    
+    .botton{
+     
+      
+       .custom-navbar {
+        background-color: black; /* Change to red */
+         color: white;
+      
+
+         .navbar-brand {
+            font-size: 50px;
+            margin-left: 35px;
+            color: white !important; /* White text color */
+            font-weight:bold;
+            .ElectricalServicesIcon{
+                font-size: 38px;
+            }
+        }
+
+        .nav-dropdown .dropdown-item , .nav-link {
+            font-size: 30px;
+            margin-left: 30px;
+            color: white; /* White text color for dropdown items */
+        }
+        .dropdown, .dropdown-menu {
+            text-align: right;
+
+            .dropdown-item {
+                text-align: right;
+                font-size: 18px;
+               
+            }
+        }
+      
+}
+}
+
+
+}
