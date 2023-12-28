@@ -1,54 +1,63 @@
 import Footer from "./Components/Footer/footer";
 import "./app.scss";
 import Header from "./Components/Header/header";
+import Home from "./Pages/Home/home";
+import About from "./Pages/About/about";
+import Contact from "./Pages/Contact/contact";
+import Services from "./Pages/Services/services";
+import {
+  createBrowserRouter,
+  Navigate,
+  Outlet,
+  RouterProvider,
+} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
+
+  const Layout = ()=>{
+    return(
+      <>
         <Header />
-        <div className="gridcon">
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1 className="last">shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-       
-        </div>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
-        <h1>shay</h1>
+        <Outlet />
         <Footer />
-    </div>
+      </>
+    )
+  }
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <>
+        <Layout />
+        </>
+          
+      ),
+      children: [
+        {
+          path: "/first-web",
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+        {
+          path: "/services",
+          element: <Services />,
+        },
+      ],
+}]);
+
+  return (
+   <div className="App">
+    <RouterProvider router={router} />
+   </div>
   );
 }
 
-export default App;
+export default App;

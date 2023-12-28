@@ -2,11 +2,12 @@
 
 
 .footer{
+ border-top: 1px solid #4169E1;
     height:40%;
     width: 100%;
-    background-color: black;
-    color: white;
-  position: relative;
+    background-color:#FFFAF0;
+    color: black;
+     position: relative;
     bottom: 0;
     display: flex;
 
@@ -30,7 +31,7 @@
         h2{
             margin: 0;
             font-size: 4rem;
-            color: #87CEEB;
+            color: black;
             font-weight:bold;
             @include mobile{
                 font-size: 3.3rem;
@@ -39,16 +40,18 @@
         h3{
             margin: 0px;
             font-size: 2.5rem;
-            color: #87CEEB;
+            color: black;
             font-weight:bold;
             @include mobile{
                 font-size: 2rem;
             } 
         }
         p{
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin: 0;
             margin-top: 10px;
+           // font-weight:bold;
+           font-weight: 600;
         }
     }
     .left{
@@ -114,7 +117,7 @@
 
         }
         .phone {
-            background-color: #1E90FF;   
+            background-color: #4169E1;   
         }
         .whatsapp {
             background-color: #228B22;   
