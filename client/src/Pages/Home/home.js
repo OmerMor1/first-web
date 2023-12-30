@@ -159,9 +159,15 @@ function Home() {
                        
                      </Slider>
                 </div>
+                <div class="buttons-container">
+                    <button class="button-arounder"><a href="https://www.midrag.co.il/SpCard/Sp/102832?areaId=1&serviceId=152&isGeneric=false">להמלצות נוספות באתר "מידרג" לחצו כאן</a>
+</button>
+                </div>
+
              </div>
         </div>
     );
+
 }
 
 export default Home;

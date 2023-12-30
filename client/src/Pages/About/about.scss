@@ -1,64 +1,92 @@
+@import "../../app.scss";
+
 .about{
    // background-color: #F5F5F5;
     .abouttext{
         background-color: #4169E1;
         padding: 50px;
+        @include mobile{
+            margin-bottom: 0;
+          } 
         h1{
             text-align: center;
             font-size: 4rem;
             font-weight: bolder;
-            color:white
-
+            color:white;
+            @include mobile{
+                font-size: 3rem;
+                margin-top: 30px;
+                margin-bottom: 0;
+              }
         }
     }
     width: 100%;
     .container{
         background-color: #F5F5F5;
         border-radius: 10px;
-
         width: 90%;
         display: flex;
         margin-top: 40px;
         margin-bottom: 60px;
+        @include mobile{
+            flex-direction: column;
+          } 
        
         .right{
             flex:2;
             display: flex;
             flex-direction: column;
             margin-left: 40px;
-            .item{
-                display: flex;
-                align-items: center;
-                h4{
-                    margin-right: 10px;
-                    font-weight: bold;
+            .first{
+                .item{
+                    display: flex;
+                    align-items: center;
+        
+        
+                    h4{
+                        margin-right: 10px;
+                        font-weight: bold;
+                }
+                .icon{
+                    font-size: 1.3rem;
+                }
             }
-            .icon{
-                font-size: 1.3rem;
+            h2{
+                font-size: 3rem;
+                font-weight: bold;
+    
             }
-        }
-        p{
-            font-size: 1.2rem;
-        }
-        h2{
-            font-size: 3rem;
-            font-weight: bold;
-        }
-        h5{
-            margin-top: 10px;
-            font-weight: bold;
+    
+            }
+
+        .text{
+
+            h5{
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 1.2rem;
+                
+    
+            }
+    
+    
         }
         
         
             }.left{
+               
+    
                 flex:1;
                 margin-top: 40px;
+
                 img{
                   height: 500px;
                   width: 100%;
                   border-radius: 10px;  
+    
                 }
-        
 
 
 

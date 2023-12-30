@@ -1,6 +1,7 @@
 import "./header.scss"
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import ElectricalServicesIcon from '@mui/icons-material/ElectricalServices';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 
 function header(){
     return(
@@ -15,7 +16,7 @@ function header(){
                  <Nav.Link href="/first-web">דף הבית</Nav.Link>
                  <Nav.Link href="/about">אודות</Nav.Link>
                 <Nav.Link href="/services">שירותים</Nav.Link>
-                 <NavDropdown title="אזורי עבודה" id="basic-nav-dropdown">
+                 <NavDropdown title="אזורי עבודה           " id="basic-nav-dropdown">
                      <NavDropdown.Item>חשמלאי באור יהודה</NavDropdown.Item>
                      <NavDropdown.Divider />
                     <NavDropdown.Item>חשמלאי בתל אביב</NavDropdown.Item>
@@ -50,6 +51,9 @@ function header(){
                  <Nav.Link href="/contact">צור קשר</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
+                <button class="name noselect"><a href="tel:+972542266843" className="phone">
+                    <PhoneEnabledIcon className="icon" /> 054-226-6843
+                </a></button>
              </Navbar>
             </div>
         </div>
