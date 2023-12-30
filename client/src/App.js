@@ -5,6 +5,8 @@ import Home from "./Pages/Home/home";
 import About from "./Pages/About/about";
 import Contact from "./Pages/Contact/contact";
 import Services from "./Pages/Services/services";
+import emailjs from 'emailjs-com';
+
 import {
   createBrowserRouter,
   Navigate,
@@ -13,7 +15,7 @@ import {
 } from "react-router-dom";
 
 function App() {
-
+  emailjs.init("37xiDGS3H-A-ucKOu");
   const Layout = ()=>{
     return(
       <>

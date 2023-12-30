@@ -5,10 +5,8 @@ import { useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
-
-
-
+import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
+import Photo from "./photo.jpg"
 
 function Home() {
     const [activeContent, setActiveContent] = useState("במידה ואתם מתמודדים עם הפסקת חשמל, כדאי לבדוק האם הפסקת החשמל היא גם אצל השכנים או רק בבתיכם. במידה וההפסקת חשמל היא גם אצל השכנים כנראה שחברת החשמל דואגת לכך שהחשמל ישוב לפעול בהקדם. במידה והפסקת החשמל היא רק בביתכם, אשמח להגיע ולסייע בפתרון הבעיה.");
@@ -21,16 +19,27 @@ function Home() {
     };
 
     const boxStyle = (boxNumber) => ({
-      //  border: "1px solid black",
         cursor: "pointer",
         backgroundColor: activeBox === boxNumber ? "#FF4500" : "white", 
         color: activeBox === boxNumber ? "white" : "black", 
     });
 
+
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      };
+      
+
     return (
         <div className="home">
             <div className="heading">
-                <h1>קובי מור - חשמלאי ראשי</h1>
+                <h1>קובי מור - חשמלאי ראשי,</h1>
+                <h1>קבלן רשום מס' 36654</h1>
                 <h1>עבודות חשמל, אחזקה ובית חכם</h1>
             </div>
             <div className="container">
@@ -39,7 +48,6 @@ function Home() {
                 </div>
                 <div className="bottom">
                     <div className="left">
-                        {/* Content for the left side */}
                         <div className="text">
                             <p>{activeContent}</p>
                         </div>
@@ -82,11 +90,77 @@ function Home() {
                 <div className="top">
                     <h2>לקוחות ממליצים</h2>
                 </div>
-
-                                
-
+                <div class="carousel-container">
+                    <Slider {...settings}>
+                        <div className="carousel-item">
+                                <div className="item">
+                                    <ChatOutlinedIcon className='textIcon'/>
+                                   <p>הוא החשמלאי הכי טוב, אמין, מקצועי, מיוחד ונפלא שיש! הוא מעולם לא איחר, תמיד עומד בלוחות זמנים, הוא גאון הנדסי ופותר את כל הבעיות יפה מאוד, אני מרוצה מכל מה שעשה, המלצתי עליו כבר להרבה אנשים ואני עובד איתו כבר הרבה שנים. חבל על הזמן!</p> 
+                                   <h2>עקיבא קליימן</h2>
+                                   <h3>סביון</h3>
+                                </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="item">
+                                     <ChatOutlinedIcon className='textIcon'/>
+                                    <p>קובי פשוט מצוין, הוא מקצועי, עושה עבודה לעילא ולעילא. הכל מושלם, גם בזמינות, הלבביות שלו והמחירים שלו הגונים בעיני. אני עובד איתו באופן קבוע כבר מעל ל10 שנים.</p> 
+                                    <h2>שי עציוני</h2>
+                                    <h3>קריית אונו</h3>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="item">
+                                    <ChatOutlinedIcon className='textIcon'/>
+                                    <p>קובי הוא שירותי, מדהים, סבלני, מגיע בזמן, ובעיני גובה מחיר טוב. הוא לא מתעצבן וכועס כמו הרבה בעלי מקצוע. יצאת צדיק זה ממש הוא. הוא הסביר לנו את האפשרויות והמחירים ובעיני גבה מחיר טוב. ממליצה עליו בחום.</p> 
+                                    <h2>יפית זכות</h2>
+                                    <h3>אור יהודה</h3>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="item">
+                                  <ChatOutlinedIcon className='textIcon'/>
+                                    <p>החשמלאי מספר אחת במדינה! בן אדם ישר, מקצועי, יסודי ואמין. פשוט בעל מקצוע ואוו! כל מי שלוקח אותו יכול להיות בראש שקט. הוא אדיב, סובלני והמחירים שלו הוגנים לגמרי בעיניי. אני מאד מרוצה.</p> 
+                                    <h2>אופיר תקוע</h2>
+                                    <h3>תל מונד</h3>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                                <div className="item">
+                                  <ChatOutlinedIcon className='textIcon'/>
+                                   <p>קובי היה ממש טוב. הוא אדם מקסים, ישר, מסביר הכל, מה שהוא אומר זה מה שהוא עושה והכל היה ממש בסדר גמור..</p> 
+                                   <h2>קוקו כהן יעקב</h2>
+                                   <h3>לוד</h3>
+                                </div>
+                        </div>
+                        <div className="carousel-item">
+                                <div className="item">
+                                     <ChatOutlinedIcon className='textIcon'/>
+                                   <p>קובי מקצועי, נדיב, עשה את מה שצריך לעשות באופן יסודי ואני סומכת עליו בעיניים עצומות.</p> 
+                                   <h2>שלי בר</h2>
+                                   <h3>אור יהודה</h3>
+                                </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="item">
+                                    <ChatOutlinedIcon className='textIcon'/>
+                                    <p>הוא היה אחלה, הצליח לאבחן את הבעיה, תיקן מה שצריך והיה מקצועי. אני מרוצה מהשירות וממליץ עליו.</p> 
+                                    <h2>אורי מורגנשטרן</h2>
+                                    <h3>רמת גן</h3>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="item">
+                                    <ChatOutlinedIcon className='textIcon'/>
+                                    <p>היה מעולה! קובי מקצוען אמיתי. הוא נעים, דייק בזמנים, עמד בהבטחות ועשה עבודה מעולה. אנחנו ממליצים ומאוד מרוצים.</p> 
+                                    <h2>מיכל צוקר</h2>
+                                    <h3>גבעתיים</h3>
+                            </div>
+                        </div>
+                       
+                     </Slider>
+                </div>
              </div>
-             </div>
+        </div>
     );
 }
 
