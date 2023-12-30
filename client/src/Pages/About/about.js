@@ -1,8 +1,12 @@
 import "./about.scss"
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import Phototata from "./pic.jpg"
+import { useEffect } from "react";
 
-function about(){
+
+function About(){
+    
+
     return(
         <div className="about">
                     <div className="abouttext">
@@ -11,7 +15,8 @@ function about(){
 
             <div className="container">
                 <div className="right">
-                    <h2>קובי מור</h2>
+                <div className="first">
+                <h2>קובי מור</h2>
                     <div className="item">
                         <ElectricBoltIcon className="icon"/>
                         <h4>בעל ניסיון של 32 שנים בתחום!</h4>
@@ -30,6 +35,9 @@ function about(){
                         <ElectricBoltIcon className="icon"/>
                         <h4>מבצע פרוייקטים למסחר, תעשייה ומשרדים.</h4>
                     </div>
+
+                </div>
+                    <div className="text">
                     <hr />
                     <p> 
                     ק. מור עבודות חשמל ותקשורת בניהולו של קובי מור, חשמלאי ראשי מאור יהודה, בעל רישיון מספר  053772 הרשום במשרד העבודה.<br/> ק.מור בעל ניסיון רב במתן שירותי חשמל, ניסיון שנרכש במשך יותר מ- 30 שנים.<br/><br/> השירות מסופק ללקוחות פרטיים ועסקיים, בהם בתים, דירות, מסעדות, משרדים וחנויות. הצוות שם דגש על מתן שירות מקצועי, יעיל ואמין עם יחס אישי וליווי צמוד בשילוב עם עמידה בלוחות זמנים עד לשביעות רצון הלקוח. הצוות המיומן בחברה ערוך לבצע פרויקטים בכל סדר גודל. 
@@ -54,14 +62,14 @@ function about(){
 
 לכן חל איסור מוחלט לאדם בלתי מוסמך לעבוד עם חשמל בכל מקרה בו הוא ניתקל, כאשר אתם רואים חוט או שקע חשוף הזמינו מייד חשמלאי בראש שקט אשר ידע כיצד לטפל במקרה בבטחה.
                     </p>
+                    </div>
                 </div>
                 <div className="left">
                     <img src={Phototata} alt='Kobi Mor'></img>
-                    
                 </div>
             </div>
         </div>
     )
 }
 
-export default about;
+export default About;
