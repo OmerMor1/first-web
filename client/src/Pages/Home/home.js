@@ -20,7 +20,7 @@ function Home() {
 
     const boxStyle = (boxNumber) => ({
         cursor: "pointer",
-        backgroundColor: activeBox === boxNumber ? "red" : "white", 
+        backgroundColor: activeBox === boxNumber ? "#FF4500" : "white", 
         color: activeBox === boxNumber ? "white" : "black", 
     });
 
