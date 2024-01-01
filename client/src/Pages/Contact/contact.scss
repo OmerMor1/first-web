@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .contact{
     width: 100%;
     display: flex;
@@ -15,12 +17,23 @@
         margin-bottom: 70px;
         background-color: #4169E1;
         padding: 50px;
+        @include mobile{
+            margin-bottom: 0;
+          } 
+          @include tablet{
+            margin-bottom: 0;
+          }
     
 
         h1{
             font-size: 4rem;
             font-weight: bolder;
             color:white;
+            @include mobile{
+                font-size: 2.2rem;
+                margin-top: 30px;
+                margin-bottom: 0;
+              }
 
         }
     }.bottom{
@@ -28,19 +41,37 @@
         border-radius: 10px;
         background-color: #f5f5f5;
         display: flex;
-        
+        @include mobile{
+            display: flex;
+            flex-flow: column;
+           .right{order: 2;}   
+           .middle{order:1}     
+         } 
+         @include tablet{
+            width: 95%;
+            margin-top: 40px;
+           } 
         .right{
             flex: 0.9;
             display: flex;
             flex-direction: column;
             margin-right: 30px;
-            
+            @include mobile{
+                margin-right: 5px;
+            }
+            @include tablet{
+             margin-left: 20px;  
+
+            } 
             h2{
                 margin: 0;
                 font-size: 2.5rem;
                 font-weight: 1000;
                 color:black;
                 padding: 15px;
+                @include mobile{
+                    font-size: 2rem;
+                } 
             }
             a{
                 color: inherit;
@@ -82,12 +113,19 @@
             flex: 1;
             background-color: transparent;
             margin-left: 50px;
+            @include mobile{
+            margin-top: 20px;
+            margin-bottom: 35px;
+        } 
             h2{
                 margin: 0;
                 font-size: 2.5rem;
                 font-weight: 1000;
                 color:black;
                 padding: 15px;
+                @include mobile{
+                    font-size: 2rem;
+                } 
             }
             input[type="text"],
             textarea {
@@ -127,7 +165,13 @@
             flex:1;
             display: flex;
             align-items: center;
-            
+            @include mobile{
+                display: none;   
+             }
+             @include tablet{
+                display: none;   
+
+            } 
         
             img{
                 width: 90%;

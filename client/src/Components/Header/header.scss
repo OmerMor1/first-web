@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .header {
     height: 100px;
     width: 100%;
@@ -81,6 +83,15 @@
               
               button:focus {
                   outline: none;
+              }
+              .name{
+                @include mobile{
+                    display: none;
+                   }
+
+                   @include tablet{
+                    display: none;
+                   }
               }
         }
     }

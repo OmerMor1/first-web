@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import Photo from "./photo.jpg"
+import Accordion from '../../Components/Accordion/Accordion';
 
 function Home() {
     const [activeContent, setActiveContent] = useState("במידה ואתם מתמודדים עם הפסקת חשמל, כדאי לבדוק האם הפסקת החשמל היא גם אצל השכנים או רק בבתיכם. במידה וההפסקת חשמל היא גם אצל השכנים כנראה שחברת החשמל דואגת לכך שהחשמל ישוב לפעול בהקדם. במידה והפסקת החשמל היא רק בביתכם, אשמח להגיע ולסייע בפתרון הבעיה.");
@@ -24,15 +25,24 @@ function Home() {
         color: activeBox === boxNumber ? "white" : "black", 
     });
 
+    const [activeIndices, setActiveIndices] = useState([]);
 
+    const handleClick = (index) => {
+        if (activeIndices.includes(index)) {
+            setActiveIndices(activeIndices.filter(i => i !== index)); // Close the item
+        } else {
+            setActiveIndices([...activeIndices, index]); // Add to open items
+        }
+    };
 
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: window.innerWidth <= 1025 ? 1 : 3,
         slidesToScroll: 1,
       };
+      console.log(window.innerWidth);
       
 
     return (
@@ -71,7 +81,7 @@ function Home() {
                             </li>
                             <li className="item" style={boxStyle(4)} onClick={() => handleBoxClick(4,'מתגים ושקעי חשמל חיוניים לתפקוד הבית, דרכם נוכל להדליק ולכבות את מכשירי החשמל שלנו. כאשר יש לך מתגים ושקעים לא תקינים בביתך, אנו מציעים מתגי חשמל ושירותי תיקון שקעים כדי לספק אספקת חשמל בטוחה ופונקציונלית.')}>
                             <ElectricBoltIcon className='icon'/>
-                            <p>מתגים חשמליים ותיקון שקעים</p>
+                            <p>מתגים חשמליים</p>
                             </li>
                             <li className="item" style={boxStyle(5)} onClick={() => handleBoxClick(5,'על מנת שנוכל להתאים את הבית שלנו לטכנולוגיה המתקדמת, בזמן בניית מבנה חדש או שדרוג הבית ניתן להכין תשתית שמתאימה לבית חכם. בית חכם הוא בית שפועל על ידי מערכת המאפשרת לשלוט על מספר מוצרי חשמל בו זמנית באמצעות מפסק אחד. את מערכת הבית החכם ניתן להפעיל אפילו כאשר אתם מחוץ לבית והיא תאפשר לכם נוחות מתקדמת. מעוניינים לשמוע פרטים נוספים? חייגו אלי ואשמח לסייע.')}>
                             <ElectricBoltIcon className='icon'/>
@@ -85,6 +95,8 @@ function Home() {
                     </div>
                 </div>
             </div>
+          
+            <Accordion />
 
             <div className="recommendations">
                 <div className="top">
@@ -170,4 +182,4 @@ function Home() {
 
 }
 
-export default Home;
+export default Home;

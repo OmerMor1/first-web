@@ -1,6 +1,6 @@
 import "./about.scss"
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
-import Phototata from "./pic.jpg"
+import Phototata from "./about_pic.jpg"
 import { useEffect } from "react";
 
 
@@ -9,32 +9,32 @@ function About(){
 
     return(
         <div className="about">
-                    <div className="abouttext">
+            <div className="abouttext">
                 <h1>אודות - ק.מור עבודות חשמל</h1>
             </div>
 
             <div className="container">
                 <div className="right">
-                <div className="first">
-                <h2>קובי מור</h2>
-                    <div className="item">
-                        <ElectricBoltIcon className="icon"/>
-                        <h4>בעל ניסיון של 32 שנים בתחום!</h4>
+                    <div className="first">
+                    <h2>קובי מור</h2>
+                        <div className="item">
+                            <ElectricBoltIcon className="icon"/>
+                            <h4>בעל ניסיון של 32 שנים בתחום!</h4>
 
-                    </div>
-                    <div className="item">
-                        <ElectricBoltIcon className="icon"/>
-                        <h4>בעל רישיון חשמלאי ראשי וקבלן רשום מס' 36654.</h4>
-                    </div>
-                    <div className="item">
-                        <ElectricBoltIcon className="icon"/>
-                        <h4>היכרות מעמיקה בתחום והתנסות עם מערכות ותשתיות רבות.</h4>
+                        </div>
+                        <div className="item">
+                            <ElectricBoltIcon className="icon"/>
+                            <h4>בעל רישיון חשמלאי ראשי וקבלן רשום מס' 36654.</h4>
+                        </div>
+                        <div className="item">
+                            <ElectricBoltIcon className="icon"/>
+                            <h4>היכרות מעמיקה בתחום והתנסות עם מערכות ותשתיות רבות.</h4>
 
-                    </div>
-                    <div className="item">
-                        <ElectricBoltIcon className="icon"/>
-                        <h4>מבצע פרוייקטים למסחר, תעשייה ומשרדים.</h4>
-                    </div>
+                        </div>
+                        <div className="item">
+                            <ElectricBoltIcon className="icon"/>
+                            <h4>מבצע פרוייקטים למסחר, תעשייה ומשרדים.</h4>
+                        </div>
 
                 </div>
                     <div className="text">
