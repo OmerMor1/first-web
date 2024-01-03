@@ -7,11 +7,11 @@
     align-items: center;
     width: 100%; 
     margin-bottom: 70px;
-    @include mobile{
-      margin-bottom: 0;
-    } 
     @include tablet{
       margin-bottom: 0;
+  } 
+  @include mobile{
+    margin-bottom: 0;
   } 
     .top{
         display: flex;
@@ -22,22 +22,33 @@
         background-color: #4169E1;
         padding: 50px;
         width: 100%; 
-        @include mobile{
-          margin-bottom: 20px;
-        } 
         @include tablet{
           margin-bottom: 20px;
       }
+      @include mobile{
+        padding-bottom: 25px;
+        padding-top: 25px;
+        padding-left: 13px;
+        padding-right: 13px;
+        margin-bottom: 20px;
+      } 
 
         h1{
             font-size: 4rem;
             font-weight: bolder;
             color:white;
-            @include mobile{
-              font-size: 2.2rem;
-              margin-top: 30px;
+            @include tablet{
+              font-size: 3rem;
+              margin-top: 0;
               margin-bottom: 0;
-            } 
+            }
+            @include mobile{
+              margin-bottom: 0;
+              text-align: center;
+              font-weight: bolder;
+              color:white;
+              font-size: 2.5rem;             
+            }
            
         }
 

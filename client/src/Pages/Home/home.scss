@@ -13,32 +13,40 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        //margin-top: 30px;
         margin-bottom: 70px;
         background-color: #4169E1;
         padding: 50px;
         width: 100%; 
         @include mobile{
-          margin-bottom: 0;
-          margin-top: 30px;
+          padding-bottom: 25px;
+          padding-top: 25px;
+          padding-left: 13px;
+          padding-right: 13px;
+          margin-bottom: 20px;
         } 
         h1{
             font-size: 4rem;
             font-weight: bolder;
+            text-align: center;
             color:white;
-            @include mobile{
-              font-size: 2.2rem;
-              margin-bottom: 0;
-              text-align: center;
-            }
             @include tablet{
               font-size: 3rem;
               margin-bottom: 0;
               text-align: center;
             }
+            @include mobile{
+              margin-bottom: 0;
+              text-align: center;
+              font-weight: bolder;
+              color:white;
+              font-size: 2.5rem;             
+            }
+            
 
         }
-    }
+        
+        }
+    
 
     .container {
       @include mobile{
@@ -210,7 +218,7 @@
    // overflow: hidden; /* Hide overflow to prevent scrollbar */
    display: flex;
    flex-direction: column;
-  
+   
    .buttons-container{
     width: 100%;
     margin-top: 40px;
@@ -359,14 +367,23 @@
           font-weight: bold;
           color: black;
           margin-top: auto;
+          @include  mobileMini{
+            font-size: 1rem;
+          }
         }
         h3{
             font-size: 1rem;
             color: black;
+            @include  mobileMini{
+              font-size: 0.8rem;
+            }
         }
         p {
           font-size: 1rem;
           color: black;
+          @include  mobileMini{
+            font-size: 0.8rem;
+          }
         }
       }
     }

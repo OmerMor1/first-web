@@ -48,9 +48,9 @@ function Home() {
     return (
         <div className="home">
             <div className="heading">
-                <h1>קובי מור - חשמלאי ראשי,</h1>
-                <h1>קבלן רשום מס' 36654</h1>
-                <h1>עבודות חשמל, אחזקה ובית חכם</h1>
+                <h1>קובי מור - חשמלאי ראשי                    <br/>
+ קבלן רשום מס' 36654,                    <br/>
+עבודות חשמל, אחזקה ובית חכם</h1>
             </div>
             <div className="container">
                 <div className="top">

@@ -25,7 +25,11 @@ body {
         @content;
     }
 }
-
+@mixin mobileMini{
+    @media(max-width:365px){
+        @content;
+    }
+}
 @mixin tablet{
     @media(max-width:1025px){
         @content;

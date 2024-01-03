@@ -8,6 +8,9 @@
         .custom-navbar {
             background-color: #FFFAF0;
             color: white;
+            @include  mobile{
+                padding-right: 10px;
+            }
 
             .navbar-brand {
                 font-size: 50px;
@@ -17,6 +20,10 @@
                 .ElectricalServicesIcon {
                     font-size: 38px;
                 }
+                @include  mobileMini{
+                    font-size: 35px;
+                    margin-left: 2px;
+                }
             }
 
             .nav-link, .nav-dropdown {
@@ -24,6 +31,7 @@
                 margin-left: 30px;
                 font-weight: 600;
                 color: black;
+               
 
                 // Specific styles for dropdown toggle
                 &.dropdown-toggle {
@@ -56,6 +64,10 @@
               button {
                   width: 150px;
                   height: 50px;
+                  @include  mobileMini{
+                    width: 100px;
+                    height: 50px;
+                }
                   cursor: pointer;
                   font-size: 20px;
                   font-weight: bold;
