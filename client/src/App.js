@@ -40,7 +40,7 @@ function App() {
       ),
       children: [
         {
-          path: "/first-web",
+          path: "/",
           element: <Home />,
         },
         {
