@@ -10,7 +10,7 @@ import Services from "./Pages/Services/services";
 import emailjs from 'emailjs-com';
 
 import {
-  createBrowserRouter,
+  HashRouter as Router ,
   Navigate,
   Outlet,
   RouterProvider,
