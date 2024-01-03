@@ -1,6 +1,8 @@
 import Footer from "./Components/Footer/footer";
 import "./app.scss";
 import Header from "./Components/Header/header";
+import Icon from "./Components/Icon/icon";
+
 import Home from "./Pages/Home/home";
 import About from "./Pages/About/about";
 import Contact from "./Pages/Contact/contact";
@@ -21,6 +23,7 @@ function App() {
       <>
         <Header />
         <Outlet />
+        <Icon />
         <Footer />
       </>
     )

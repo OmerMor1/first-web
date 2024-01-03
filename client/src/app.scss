@@ -32,29 +32,4 @@ body {
     }
 }
 
-.phone-icon {
-    display: none;
-    position: fixed;
-    bottom: 50%;
-    left: 10px;
-    z-index: 1000; /* Adjust the z-index to make sure it's above other content */
-    @include mobile {
-        display: block;
-      }
-  }
   
-  .phone-icon a {
-    display: block;
-    padding: 20px;
-    background-color: #007bff; /* Example background color, customize as needed */
-    color: #fff; /* Example text color, customize as needed */
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-  }
-  
-  .phine-icon svg {
-    width: 30px; /* Adjust the size of the icon as needed */
-    height: 30px;
-    color: black;
-  }
