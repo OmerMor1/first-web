@@ -12,21 +12,22 @@ import emailjs from 'emailjs-com';
 function App() {
   emailjs.init('37xiDGS3H-A-ucKOu');
 
-  return (
-    <div className="App">
-    <Router basename="/"> {/* Add basename prop */}
-      <Header />
-      <Routes>
-        <Route path="/first-web" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-      </Routes>
-      <Icon />
-      <Footer />
-    </Router>
-  </div>
-  );
+
+    return (
+      <div className="App">
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+          </Routes>
+          <Icon />
+          <Footer />
+        </Router>
+      </div>
+    );
 }
 
 export default App;

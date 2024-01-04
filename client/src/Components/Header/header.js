@@ -6,14 +6,13 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 function header(){
     return(
         <div className="header">
-            
             <div className="botton">
             <Navbar className="custom-navbar"  expand="lg">
-             <Navbar.Brand href="/first-web">ק.מור<ElectricalServicesIcon className="ElectricalServicesIcon"/></Navbar.Brand>
+             <Navbar.Brand href="/">ק.מור<ElectricalServicesIcon className="ElectricalServicesIcon"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                  <Navbar.Collapse id="basic-navbar-nav">
                  <Nav className="mr-auto">
-                 <Nav.Link href="/first-web">דף הבית</Nav.Link>
+                 <Nav.Link href="/">דף הבית</Nav.Link>
                  <Nav.Link href="/about">אודות</Nav.Link>
                 <Nav.Link href="/services">שירותים</Nav.Link>
                  <NavDropdown title="אזורי עבודה           " id="basic-nav-dropdown">
