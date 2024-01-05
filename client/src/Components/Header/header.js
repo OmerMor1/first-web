@@ -13,8 +13,8 @@ function header(){
                  <Navbar.Collapse id="basic-navbar-nav">
                  <Nav className="mr-auto">
                  <Nav.Link href="/first-web/">דף הבית</Nav.Link>
-                 <Nav.Link href="/first-web/About">אודות</Nav.Link>
-                <Nav.Link href="/first-web/Services">שירותים</Nav.Link>
+                 <Nav.Link href="/first-web/about">אודות</Nav.Link>
+                <Nav.Link href="/first-web/services">שירותים</Nav.Link>
                  <NavDropdown title="אזורי עבודה           " id="basic-nav-dropdown">
                      <NavDropdown.Item>חשמלאי באור יהודה</NavDropdown.Item>
                      <NavDropdown.Divider />
@@ -47,7 +47,7 @@ function header(){
                 <NavDropdown.Item >חשמלאי בבקעת אונו</NavDropdown.Item>
                 
                   </NavDropdown>
-                 <Nav.Link href="/first-web/Contact">צור קשר</Nav.Link>
+                 <Nav.Link href="/first-web/contact">צור קשר</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
                 <button class="name noselect"><a href="tel:+972542266843" className="phone">
