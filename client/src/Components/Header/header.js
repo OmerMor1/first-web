@@ -8,13 +8,13 @@ function header(){
         <div className="header">
             <div className="botton">
             <Navbar className="custom-navbar"  expand="lg">
-             <Navbar.Brand href="/">ק.מור<ElectricalServicesIcon className="ElectricalServicesIcon"/></Navbar.Brand>
+             <Navbar.Brand href="/first-web/">ק.מור<ElectricalServicesIcon className="ElectricalServicesIcon"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                  <Navbar.Collapse id="basic-navbar-nav">
                  <Nav className="mr-auto">
-                 <Nav.Link href="/">דף הבית</Nav.Link>
-                 <Nav.Link href="/about">אודות</Nav.Link>
-                <Nav.Link href="/services">שירותים</Nav.Link>
+                 <Nav.Link href="/first-web/">דף הבית</Nav.Link>
+                 <Nav.Link href="/first-web/about">אודות</Nav.Link>
+                <Nav.Link href="/first-web/services">שירותים</Nav.Link>
                  <NavDropdown title="אזורי עבודה           " id="basic-nav-dropdown">
                      <NavDropdown.Item>חשמלאי באור יהודה</NavDropdown.Item>
                      <NavDropdown.Divider />
@@ -47,7 +47,7 @@ function header(){
                 <NavDropdown.Item >חשמלאי בבקעת אונו</NavDropdown.Item>
                 
                   </NavDropdown>
-                 <Nav.Link href="/contact">צור קשר</Nav.Link>
+                 <Nav.Link href="/first-web/contact">צור קשר</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
                 <button class="name noselect"><a href="tel:+972542266843" className="phone">

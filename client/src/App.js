@@ -15,9 +15,9 @@ function App() {
 
     return (
       <div className="App">
-        <Router>
+        <Router basename="/first-web">
           <Header />
-          <Routes>
+          <Routes >
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
