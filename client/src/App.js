@@ -11,11 +11,10 @@ import emailjs from 'emailjs-com';
 
 function App() {
   emailjs.init('37xiDGS3H-A-ucKOu');
-const name="/first-web";
 
     return (
       <div className="App">
-        <Router basename={name.PUBLIC_URL}>
+        <Router >
           <Header />
           <Routes >
             <Route path="/first-web" element={<Home />} />

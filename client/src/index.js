@@ -4,10 +4,11 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
+const name="/first-web";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  
+  <React.StrictMode basename={process.env.PUBLIC_URL}>
     <App />
   </React.StrictMode>
 );
