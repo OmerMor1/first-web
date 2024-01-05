@@ -18,9 +18,9 @@ function App() {
           <Header />
           <Routes >
             <Route path="/first-web" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/first-web/about" element={<About />} />
+            <Route path="/first-web/contact" element={<Contact />} />
+            <Route path="/first-web/services" element={<Services />} />
           </Routes>
           <Icon />
           <Footer />
