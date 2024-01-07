@@ -1,11 +1,11 @@
 import "./about.scss"
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import Phototata from "./about_pic.jpg"
-import { useEffect } from "react";
-
+//import { useEffect } from "react";
+//import $ from 'jquery';
 
 function About(){
-    
+
 
     return(
         <div className="about">

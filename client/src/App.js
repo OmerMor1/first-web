@@ -11,6 +11,9 @@ import emailjs from 'emailjs-com';
 
 function App() {
   emailjs.init('37xiDGS3H-A-ucKOu');
+  
+ 
+
 
     return (
       <div className="App">
@@ -18,9 +21,9 @@ function App() {
           <Header />
           <Routes >
             <Route path="/first-web" element={<Home />} />
-            <Route path="/first-web/about" element={<About />} />
-            <Route path="/first-web/contact" element={<Contact />} />
-            <Route path="/first-web/services" element={<Services />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
           </Routes>
           <Icon />
           <Footer />
