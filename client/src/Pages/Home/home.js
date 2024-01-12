@@ -1,10 +1,10 @@
 import React from 'react';
-import './home.scss';
+import './home.css';
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import { useState } from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";  // Update the path accordingly
+import "slick-carousel/slick/slick-theme.css"; 
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import Photo from "./photo.jpg"
 import Accordion from '../../Components/Accordion/Accordion';
@@ -96,8 +96,7 @@ function Home() {
                 </div>
             </div>
           
-            <Accordion />
-
+         <Accordion />
             <div className="recommendations">
                 <div className="top">
                     <h2>לקוחות ממליצים</h2>

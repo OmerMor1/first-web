@@ -1,12 +1,18 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://omermor1.github.io/first-web/",
+  "homepage": "https://kobimor.co.il/",
   "private": true,
   "host_permissions": [
     "https://translate.google.com/"
   ],
+  "presets": [
+    "@babel/preset-react"
+  ],
   "dependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/preset-react": "^7.23.3",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.1",
@@ -24,11 +30,12 @@
     "express": "^4.18.2",
     "http-proxy-agent": "^7.0.0",
     "jquery": "^3.7.1",
+    "mime": "^4.0.1",
     "mixin": "^0.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.1",
+    "react-router-dom": "^6.21.2",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
     "sass": "^1.69.5",

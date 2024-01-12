@@ -1,5 +1,5 @@
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
-import "./icon.scss"
+import "./icon.css"
 
 function Icon() {
   

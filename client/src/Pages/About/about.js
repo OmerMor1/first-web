@@ -1,4 +1,4 @@
-import "./about.scss"
+import "./about.css"
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import Phototata from "./about_pic.jpg"
 //import { useEffect } from "react";

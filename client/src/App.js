@@ -1,33 +1,31 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Footer from './Components/Footer/footer';
-import Header from './Components/Header/header';
-import Icon from './Components/Icon/icon';
-import Home from './Pages/Home/home';
-import About from './Pages/About/about';
-import Contact from './Pages/Contact/contact';
-import Services from './Pages/Services/services';
+import { BrowserRouter , Route, Routes  } from 'react-router-dom';
+import Footer from './Components/Footer/footer.js';
+import Header from './Components/Header/header.js';
+import Icon from './Components/Icon/icon.js';
+import Home from './Pages/Home/home.js';
+import About from './Pages/About/about.js';
+import Contact from './Pages/Contact/contact.js';
+import Services from './Pages/Services/services.js';
 import emailjs from 'emailjs-com';
+import './app.css';
 
 function App() {
   emailjs.init('37xiDGS3H-A-ucKOu');
   
- 
-
-
     return (
       <div className="App">
-        <Router >
+        <BrowserRouter>
           <Header />
           <Routes >
-            <Route path="/first-web" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
           </Routes>
           <Icon />
           <Footer />
-        </Router>
+        </BrowserRouter>
       </div>
     );
 }
