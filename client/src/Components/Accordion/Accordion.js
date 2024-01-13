@@ -6,7 +6,6 @@ function Accordion(){
    return(
     <div className="accordion">
         <h1>שירותי תיקון נפוצים</h1>
-      
         <ul>
             <li>
                 <input type="checkbox" checked="false"/>

@@ -12,8 +12,8 @@ function contact(){
     
     function sendMail(e) {  
         e.preventDefault(); 
-        const serviceId = "service_f0xk6t3";
-        const templateId = "template_fbxmd3d";
+        const serviceId = "service_6ywa0jy";
+        const templateId = "template_xro9rcb";
 
         const form = e.target; 
     

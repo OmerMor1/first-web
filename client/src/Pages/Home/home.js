@@ -3,10 +3,10 @@ import './home.css';
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import { useState } from 'react';
 import Slider from 'react-slick';
+import Card from '../../Components/Card/card';
 import "slick-carousel/slick/slick.css";  // Update the path accordingly
 import "slick-carousel/slick/slick-theme.css"; 
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
-import Photo from "./photo.jpg"
 import Accordion from '../../Components/Accordion/Accordion';
 
 function Home() {
@@ -48,10 +48,11 @@ function Home() {
     return (
         <div className="home">
             <div className="heading">
-                <h1>קובי מור - חשמלאי ראשי                    <br/>
- קבלן רשום מס' 36654,                    <br/>
-עבודות חשמל, אחזקה ובית חכם</h1>
+                <h1>קובי מור - חשמלאי ראשי
+                </h1>
             </div>
+            
+            <Card />
             <div className="container">
                 <div className="top">
                     <h2>שירותי תיקון נפוצים</h2>

@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   background-color: #4169E1;
   padding: 50px;
   width: 100%;
@@ -47,6 +47,7 @@
   font-size: 4rem;
   font-weight: bolder;
   color: white;
+
 }
 @media (max-width: 1025px) {
   .services .top h1 {
@@ -82,7 +83,7 @@
 }
 .services .bottom h5 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 @media (max-width: 480px) {
   .services .bottom h5 {

@@ -15,7 +15,7 @@ function header(){
                  <Nav.Link href="/">דף הבית</Nav.Link>
                  <Nav.Link href="/about">אודות</Nav.Link>
                 <Nav.Link href="/services">שירותים</Nav.Link>
-                 <NavDropdown title="אזורי עבודה           " id="basic-nav-dropdown">
+                 <NavDropdown title="אזורי עבודה   " id="basic-nav-dropdown">
                      <NavDropdown.Item>חשמלאי באור יהודה</NavDropdown.Item>
                      <NavDropdown.Divider />
                     <NavDropdown.Item>חשמלאי בתל אביב</NavDropdown.Item>
