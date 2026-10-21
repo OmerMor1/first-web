@@ -1,11 +1,27 @@
 @charset "UTF-8";
-
-
-.about {
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+.App {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content */
+  width: 100%; /* Full width for smaller screens */
+}
+
+.header, .footer {
+  width: 100%;
+  /* Other styles... */
+}
+
 .about .abouttext {
-  background-color: #4169E1;
+  background-color: #4169e1;
   padding: 51px;
 }
 @media (max-width: 1025px) {
@@ -45,8 +61,11 @@
     font-size: 2.5rem;
   }
 }
+.about {
+  width: 100%;
+}
 .about .container {
-  background-color: #F5F5F5;
+  background-color: rgba(204, 226, 236, 0.4);
   border-radius: 10px;
   width: 90%;
   display: flex;

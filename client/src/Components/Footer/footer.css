@@ -1,11 +1,30 @@
 @charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
+.App {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content */
+  width: 100%; /* Full width for smaller screens */
+}
+
+.header, .footer {
+  width: 100%;
+  /* Other styles... */
+}
 
 .footer {
-  border-top: 1px solid #4169E1;
+  border-top: 1px solid #4169e1;
   height: 40%;
   width: 100%;
-  background-color: #FFFAF0;
+  background-color: #f0f0f0;
   color: black;
   position: relative;
   bottom: 0;
@@ -19,10 +38,6 @@
 .footer .right {
   flex: 1;
   padding: 20px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  padding-right: 40px;
 }
 @media (max-width: 480px) {
   .footer .right {
@@ -33,6 +48,12 @@
   .footer .right {
     padding: 10px;
   }
+}
+.footer .right {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
 }
 .footer .right h2 {
   margin: 0;
@@ -66,9 +87,8 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
 }
 .footer .left h4 {
   margin: 0;
@@ -106,12 +126,14 @@
     font-size: 1.7rem;
   }
 }
-.footer .left button a { /* Updated to target anchor tags */
-  color: white;
-  text-decoration: none; /* Remove underline */
+.footer .left button a {
+  /* Updated to target anchor tags */
+  color: black;
+  text-decoration: none;
   display: flex;
-  justify-content: center; /* Center content horizontally */
+  justify-content: center;
   align-items: center;
+  font-weight: 700;
 }
 .footer .left button a .icon {
   position: absolute;
@@ -129,16 +151,23 @@
   }
 }
 .footer .left .phone {
-  background-color: #4169E1;
+  background-color: #84b8ec;
 }
 .footer .left .whatsapp {
-  background-color: #228B22;
+  background-color: #84b8ec;
 }
 .footer .left .email {
-  background-color: #CC0000;
+  background-color: #84b8ec;
 }
 @media (max-width: 480px) {
   .footer .left .email {
     margin-bottom: 10px;
   }
+}
+.footer .accessibility-link {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 2px;
 }/*# sourceMappingURL=footer.css.map */
