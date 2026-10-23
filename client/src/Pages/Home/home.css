@@ -465,6 +465,9 @@ select {
   .home .recommendations {
     margin-top: 10px;
   }
+  .home .recommendations .top h2 {
+    font-size: 1.8rem;
+  }
   .home > .container {
     display: flex;
     width: 90%;
@@ -474,6 +477,8 @@ select {
   }
   .home > .container .top {
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
   .home > .container .top h2 {
     font-size: 1.8rem;
