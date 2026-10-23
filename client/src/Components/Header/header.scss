@@ -3,6 +3,7 @@
 .header {
   height: 100px;
   width: 100%;
+  z-index: 1000;
 
   .botton {
     .custom-navbar {
@@ -95,12 +96,6 @@
           width: 100%;
           font-size: 1.1rem;
         }
-      }
-
-      button:hover {
-        box-shadow:
-          20px 5px 0 black,
-          -20px -5px 0 black;
       }
 
       button:focus {

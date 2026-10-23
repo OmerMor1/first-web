@@ -1,10 +1,26 @@
 @charset "UTF-8";
+html,
+body,
+#root,
+.App {
+  background-color: #f0f0f0;
+}
+
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  background-color: #f0f0f0;
+  font-family: "Assistant", "Libre Baskerville", "Playpen Sans", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
 }
 
 .App {
@@ -15,7 +31,8 @@ body {
   width: 100%; /* Full width for smaller screens */
 }
 
-.header, .footer {
+.header,
+.footer {
   width: 100%;
   /* Other styles... */
 }
@@ -69,22 +86,17 @@ body {
     font-size: 2.5rem;
   }
 }
-@media (max-width: 480px) {
-  .home .container {
-    display: none;
-  }
-}
 .home .container {
   max-width: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 10px;
   width: 90%;
   background-color: rgba(204, 226, 236, 0.4);
-  margin-bottom: 70px;
+  margin-bottom: 25px;
   border-radius: 10px;
+  padding-bottom: 25px;
 }
 @media (max-width: 1025px) {
   .home .container {
@@ -224,9 +236,6 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.home .container {
-  /* ... (your existing styles) ... */
-}
 .home .recommendations {
   width: 90%;
   background-color: rgba(204, 226, 236, 0.4);
@@ -296,7 +305,7 @@ body {
   margin: auto;
 }
 .home .recommendations .slick-slider .slick-list {
-  overflow: hidden; /* Hide the overflowing slides */
+  overflow: hidden;
 }
 .home .recommendations .slick-slider .slick-track {
   display: flex;
@@ -449,5 +458,121 @@ body {
   .home .clients-section .clients-logos .client-logo:last-child {
     grid-column: 1/-1;
     width: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home .recommendations {
+    margin-top: 10px;
+  }
+  .home > .container {
+    display: flex;
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .home > .container .top {
+    width: 100%;
+  }
+  .home > .container .top h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .home > .container .bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    gap: 15px;
+  }
+  .home > .container .bottom .right {
+    order: 1;
+    display: grid;
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding: 0;
+  }
+  .home > .container .bottom .right .list {
+    display: contents;
+  }
+  .home > .container .bottom .right .list .item {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 130px;
+    margin: 0;
+    padding: 10px 6px;
+    box-sizing: border-box;
+  }
+  .home > .container .bottom .right .list .item .icon {
+    font-size: 2rem;
+    margin: 0 0 10px;
+  }
+  .home > .container .bottom .right .list .item p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+  .home > .container .bottom .left {
+    order: 2;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .home > .container .bottom .left .text {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+  .home > .container .bottom .left .text p {
+    padding: 15px;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: right;
+    overflow-wrap: anywhere;
+  }
+  .home > .accordion {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .home > .container .bottom {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .home > .container .bottom .left {
+    flex: 0 1 400px;
+    min-width: 0;
+    margin-right: 0;
+  }
+  .home > .container .bottom .left .text {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .home > .container .bottom .right {
+    flex: 0 1 630px;
+    min-width: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+  }
+  .home > .container .bottom .right .list .item {
+    width: 100%;
+    max-width: 190px;
+    height: auto;
+    aspect-ratio: 1/1;
+    margin: 0;
+    box-sizing: border-box;
   }
 }/*# sourceMappingURL=home.css.map */

@@ -45,23 +45,16 @@
   }
 
   .container {
-    @include mobile {
-      display: none;
-    }
-    // Ensure it takes full width
-    max-width: 100%; // To handle cases where parent has padding or border
-    // box-sizing: border-box; // Include padding and border in the element's total width and height
-    //  margin: 0 auto; // Center it if needed and remove external margins
-    // background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
-    display: flex;
+    max-width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 10px;
     width: 90%;
     background-color: #cce2ec66;
-    margin-bottom: 70px;
+    margin-bottom: 25px;
     border-radius: 10px;
+    padding-bottom: 25px;
     @include tablet {
       width: 100%;
       margin-bottom: 20px;
@@ -195,7 +188,6 @@
         }
       }
     }
-    /* ... (your existing styles) ... */
   }
 
   .recommendations {
@@ -203,7 +195,6 @@
     background-color: #cce2ec66;
     border-radius: 10px;
     margin-top: 40px;
-    // overflow: hidden; /* Hide overflow to prevent scrollbar */
     display: flex;
     flex-direction: column;
 
@@ -219,8 +210,8 @@
         border: solid 2px black;
         padding: 0.375em 1.125em;
         font-size: 1rem;
-        padding: 10px 20px; // Reduced padding, adjust as needed
-        margin: 0; // Adjust margin if needed
+        padding: 10px 20px;
+        margin: 0;
         a {
           text-decoration: none;
           color: white;
@@ -282,7 +273,7 @@
       margin: auto;
 
       .slick-list {
-        overflow: hidden; /* Hide the overflowing slides */
+        overflow: hidden;
       }
 
       .slick-track {
@@ -449,6 +440,143 @@
         .client-logo:last-child {
           grid-column: 1 / -1;
           width: 130px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    .recommendations {
+      margin-top: 10px;
+    }
+    > .container {
+      display: flex;
+      width: 90%;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+
+      .top {
+        width: 100%;
+
+        h2 {
+          font-size: 1.8rem;
+          text-align: center;
+        }
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        gap: 15px;
+
+        .right {
+          order: 1;
+          display: grid;
+          width: 100%;
+          min-width: 0;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+          padding: 0;
+
+          .list {
+            display: contents;
+
+            .item {
+              width: 100%;
+              min-width: 0;
+              height: auto;
+              min-height: 130px;
+              margin: 0;
+              padding: 10px 6px;
+              box-sizing: border-box;
+
+              .icon {
+                font-size: 2rem;
+                margin: 0 0 10px;
+              }
+
+              p {
+                margin: 0;
+                font-size: 0.9rem;
+                line-height: 1.4;
+                text-align: center;
+                overflow-wrap: anywhere;
+              }
+            }
+          }
+        }
+
+        .left {
+          order: 2;
+          width: 100%;
+          min-width: 0;
+          margin: 0;
+          padding: 0;
+
+          .text {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            margin-top: 0;
+
+            p {
+              padding: 15px;
+              margin: 0;
+              font-size: 1rem;
+              line-height: 1.6;
+              text-align: right;
+              overflow-wrap: anywhere;
+            }
+          }
+        }
+      }
+    }
+
+    > .accordion {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .home > .container {
+    .bottom {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      gap: 40px;
+      justify-content: center;
+      align-items: flex-start;
+
+      .left {
+        flex: 0 1 400px;
+        min-width: 0;
+        margin-right: 0;
+
+        .text {
+          width: 100%;
+          box-sizing: border-box;
+        }
+      }
+
+      .right {
+        flex: 0 1 630px;
+        min-width: 0;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 30px;
+
+        .list .item {
+          width: 100%;
+          max-width: 190px;
+          height: auto;
+          aspect-ratio: 1 / 1;
+          margin: 0;
+          box-sizing: border-box;
         }
       }
     }
